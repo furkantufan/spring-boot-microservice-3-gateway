@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "4bc0104a-51f2-4c01-9f3e-5366d3763323",
+		"name": "lokal-gateway-service istek örnekler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:5555/api/authentication/sign-up",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "randomSecureKeyPassword!",
+						"username": "randomSecureKeyUsername!"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"test\",\r\n    \"password\":\"test\",\r\n    \"name\":\"test\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5555/api/authentication/sign-up"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5555/api/authentication/sign-in",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "randomSecureKeyPassword!",
+						"username": "randomSecureKeyUsername!"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"test\",\r\n    \"password\":\"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5555/api/authentication/sign-in"
+			},
+			"response": []
+		}
+	]
+}

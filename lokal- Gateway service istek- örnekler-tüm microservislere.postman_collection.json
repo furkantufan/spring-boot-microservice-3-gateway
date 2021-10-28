@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "54e77c88-84f0-4cd6-acb2-80ae0c01bdd0",
+		"name": "lokal- Gateway service istek- örnekler-tüm servislere",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:5555/api/authentication/sign-up",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "randomSecureKeyPassword!",
+						"username": "randomSecureKeyUsername!"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"demo\",\r\n    \"password\":\"demo\",\r\n    \"name\":\"demo\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5555/api/authentication/sign-up"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5555/api/authentication/sign-in",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "randomSecureKeyPassword!",
+						"username": "randomSecureKeyUsername!"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"demo\",\r\n    \"password\":\"demo\",\r\n    \"name\":\"demo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5555/api/authentication/sign-in"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5555/gateway/product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoyLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1Mjk1Nzd9.aklv4PhUXm8snxd6YY4fPsiPvvzXz-vOVn_n-GTc7I16HUMPXOIbJGxPanUnhCjUdilqur7exkjqe0SD34qeCTnSx2N8qNY3O6F1VEAJnbMtf5xKTFFfUmEX0MgaRDqlu1xQwRNRs8EkBWKoFcsXi5KV4LykWGiSjTmpgoSDdFrTFdnL8l1tWr7IVcoQwZKrijyv_qvdR46xVig2rgn4a9V9gRHwuQmu0VyUcOY8jZcHdMDaMRXazjngGjAAmdop26mXGGPui5OyhAJX1pFeD902anWcjgMRJAsJ_AieWhUspzdw5C6JiWb75r_kCGrfBgUONRdaitP_oAn16MHIYA"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Product1\",\r\n    \"price\":1.2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5555/gateway/product"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5555/gateway/product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoyLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1Mjk1Nzd9.aklv4PhUXm8snxd6YY4fPsiPvvzXz-vOVn_n-GTc7I16HUMPXOIbJGxPanUnhCjUdilqur7exkjqe0SD34qeCTnSx2N8qNY3O6F1VEAJnbMtf5xKTFFfUmEX0MgaRDqlu1xQwRNRs8EkBWKoFcsXi5KV4LykWGiSjTmpgoSDdFrTFdnL8l1tWr7IVcoQwZKrijyv_qvdR46xVig2rgn4a9V9gRHwuQmu0VyUcOY8jZcHdMDaMRXazjngGjAAmdop26mXGGPui5OyhAJX1pFeD902anWcjgMRJAsJ_AieWhUspzdw5C6JiWb75r_kCGrfBgUONRdaitP_oAn16MHIYA"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:5555/gateway/product"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5555/gateway/product/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoyLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1Mjk1Nzd9.aklv4PhUXm8snxd6YY4fPsiPvvzXz-vOVn_n-GTc7I16HUMPXOIbJGxPanUnhCjUdilqur7exkjqe0SD34qeCTnSx2N8qNY3O6F1VEAJnbMtf5xKTFFfUmEX0MgaRDqlu1xQwRNRs8EkBWKoFcsXi5KV4LykWGiSjTmpgoSDdFrTFdnL8l1tWr7IVcoQwZKrijyv_qvdR46xVig2rgn4a9V9gRHwuQmu0VyUcOY8jZcHdMDaMRXazjngGjAAmdop26mXGGPui5OyhAJX1pFeD902anWcjgMRJAsJ_AieWhUspzdw5C6JiWb75r_kCGrfBgUONRdaitP_oAn16MHIYA"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:5555/gateway/product/1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5555/gateway/transaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoyLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1Mjk1Nzd9.aklv4PhUXm8snxd6YY4fPsiPvvzXz-vOVn_n-GTc7I16HUMPXOIbJGxPanUnhCjUdilqur7exkjqe0SD34qeCTnSx2N8qNY3O6F1VEAJnbMtf5xKTFFfUmEX0MgaRDqlu1xQwRNRs8EkBWKoFcsXi5KV4LykWGiSjTmpgoSDdFrTFdnL8l1tWr7IVcoQwZKrijyv_qvdR46xVig2rgn4a9V9gRHwuQmu0VyUcOY8jZcHdMDaMRXazjngGjAAmdop26mXGGPui5OyhAJX1pFeD902anWcjgMRJAsJ_AieWhUspzdw5C6JiWb75r_kCGrfBgUONRdaitP_oAn16MHIYA"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":2,\r\n    \"productId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5555/gateway/transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5555/gateway/transaction --get metod",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoyLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1Mjk1Nzd9.aklv4PhUXm8snxd6YY4fPsiPvvzXz-vOVn_n-GTc7I16HUMPXOIbJGxPanUnhCjUdilqur7exkjqe0SD34qeCTnSx2N8qNY3O6F1VEAJnbMtf5xKTFFfUmEX0MgaRDqlu1xQwRNRs8EkBWKoFcsXi5KV4LykWGiSjTmpgoSDdFrTFdnL8l1tWr7IVcoQwZKrijyv_qvdR46xVig2rgn4a9V9gRHwuQmu0VyUcOY8jZcHdMDaMRXazjngGjAAmdop26mXGGPui5OyhAJX1pFeD902anWcjgMRJAsJ_AieWhUspzdw5C6JiWb75r_kCGrfBgUONRdaitP_oAn16MHIYA"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:5555/gateway/transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5555/gateway/transaction/1 --delete transaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoyLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1Mjk1Nzd9.aklv4PhUXm8snxd6YY4fPsiPvvzXz-vOVn_n-GTc7I16HUMPXOIbJGxPanUnhCjUdilqur7exkjqe0SD34qeCTnSx2N8qNY3O6F1VEAJnbMtf5xKTFFfUmEX0MgaRDqlu1xQwRNRs8EkBWKoFcsXi5KV4LykWGiSjTmpgoSDdFrTFdnL8l1tWr7IVcoQwZKrijyv_qvdR46xVig2rgn4a9V9gRHwuQmu0VyUcOY8jZcHdMDaMRXazjngGjAAmdop26mXGGPui5OyhAJX1pFeD902anWcjgMRJAsJ_AieWhUspzdw5C6JiWb75r_kCGrfBgUONRdaitP_oAn16MHIYA"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:5555/gateway/transaction/1"
+			},
+			"response": []
+		}
+	]
+}
