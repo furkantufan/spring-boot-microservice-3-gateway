@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "ffb07d5c-75a0-4226-9bf2-356b9a3a992f",
+		"name": "heroku-all-service istek-örnekler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/api/authentication/sign-up",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "randomSecureKeyPassword!",
+						"username": "randomSecureKeyUsername!"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"demo2\",\r\n    \"password\":\"demo2\",\r\n    \"name\":\"demo2\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/api/authentication/sign-up"
+			},
+			"response": []
+		},
+		{
+			"name": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/api/authentication/sign-in",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "randomSecureKeyPassword!",
+						"username": "randomSecureKeyUsername!"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"demo\",\r\n    \"password\":\"demo\",\r\n    \"name\":\"demo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/api/authentication/sign-in"
+			},
+			"response": []
+		},
+		{
+			"name": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoxLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1MzMzODd9.IJh1EJXP-S1n6wC4Qp09mqTJBfxKdxyg7eHS6QBzMnSCwG1hJ8CdcOk0Ax7fdyUbAwGd1B3fmpGYFctxC20XTpFh7SUY1T_pjclSdNqP88Za_s6VGHjz_j6T9uiGpmGXnehrtgxW1wiKks5ci6nWhLTzRBTjsQybAyqYmBC9P2iCxmIZ_VULlVhgig8j8_2KeLdItPQ7TT7k7Y3vUUXzRYpm9HGjSzvn0xJZB2nm4Ut7DCeBWjNgo2te6xE8qSjyWiZxs6TRHGZgdlp8s7KwjKNQAHKCIjxxfT3ZK6I_qiWq10xbSpL-QdgkYv1jQ1r1LceetEdsx-frMUccAyUgeg"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Product1\",\r\n    \"price\":1.2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/product"
+			},
+			"response": []
+		},
+		{
+			"name": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoyLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1Mjk1Nzd9.aklv4PhUXm8snxd6YY4fPsiPvvzXz-vOVn_n-GTc7I16HUMPXOIbJGxPanUnhCjUdilqur7exkjqe0SD34qeCTnSx2N8qNY3O6F1VEAJnbMtf5xKTFFfUmEX0MgaRDqlu1xQwRNRs8EkBWKoFcsXi5KV4LykWGiSjTmpgoSDdFrTFdnL8l1tWr7IVcoQwZKrijyv_qvdR46xVig2rgn4a9V9gRHwuQmu0VyUcOY8jZcHdMDaMRXazjngGjAAmdop26mXGGPui5OyhAJX1pFeD902anWcjgMRJAsJ_AieWhUspzdw5C6JiWb75r_kCGrfBgUONRdaitP_oAn16MHIYA"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/product"
+			},
+			"response": []
+		},
+		{
+			"name": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/product/11",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoyLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1Mjk1Nzd9.aklv4PhUXm8snxd6YY4fPsiPvvzXz-vOVn_n-GTc7I16HUMPXOIbJGxPanUnhCjUdilqur7exkjqe0SD34qeCTnSx2N8qNY3O6F1VEAJnbMtf5xKTFFfUmEX0MgaRDqlu1xQwRNRs8EkBWKoFcsXi5KV4LykWGiSjTmpgoSDdFrTFdnL8l1tWr7IVcoQwZKrijyv_qvdR46xVig2rgn4a9V9gRHwuQmu0VyUcOY8jZcHdMDaMRXazjngGjAAmdop26mXGGPui5OyhAJX1pFeD902anWcjgMRJAsJ_AieWhUspzdw5C6JiWb75r_kCGrfBgUONRdaitP_oAn16MHIYA"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/product/11"
+			},
+			"response": []
+		},
+		{
+			"name": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/transaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoyLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1Mjk1Nzd9.aklv4PhUXm8snxd6YY4fPsiPvvzXz-vOVn_n-GTc7I16HUMPXOIbJGxPanUnhCjUdilqur7exkjqe0SD34qeCTnSx2N8qNY3O6F1VEAJnbMtf5xKTFFfUmEX0MgaRDqlu1xQwRNRs8EkBWKoFcsXi5KV4LykWGiSjTmpgoSDdFrTFdnL8l1tWr7IVcoQwZKrijyv_qvdR46xVig2rgn4a9V9gRHwuQmu0VyUcOY8jZcHdMDaMRXazjngGjAAmdop26mXGGPui5OyhAJX1pFeD902anWcjgMRJAsJ_AieWhUspzdw5C6JiWb75r_kCGrfBgUONRdaitP_oAn16MHIYA"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":2,\r\n    \"productId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/transaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoyLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1Mjk1Nzd9.aklv4PhUXm8snxd6YY4fPsiPvvzXz-vOVn_n-GTc7I16HUMPXOIbJGxPanUnhCjUdilqur7exkjqe0SD34qeCTnSx2N8qNY3O6F1VEAJnbMtf5xKTFFfUmEX0MgaRDqlu1xQwRNRs8EkBWKoFcsXi5KV4LykWGiSjTmpgoSDdFrTFdnL8l1tWr7IVcoQwZKrijyv_qvdR46xVig2rgn4a9V9gRHwuQmu0VyUcOY8jZcHdMDaMRXazjngGjAAmdop26mXGGPui5OyhAJX1pFeD902anWcjgMRJAsJ_AieWhUspzdw5C6JiWb75r_kCGrfBgUONRdaitP_oAn16MHIYA"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/transaction/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJkZW1vIiwidXNlcklkIjoyLCJyb2xlcyI6IlVTRVIiLCJleHAiOjE2MzU1Mjk1Nzd9.aklv4PhUXm8snxd6YY4fPsiPvvzXz-vOVn_n-GTc7I16HUMPXOIbJGxPanUnhCjUdilqur7exkjqe0SD34qeCTnSx2N8qNY3O6F1VEAJnbMtf5xKTFFfUmEX0MgaRDqlu1xQwRNRs8EkBWKoFcsXi5KV4LykWGiSjTmpgoSDdFrTFdnL8l1tWr7IVcoQwZKrijyv_qvdR46xVig2rgn4a9V9gRHwuQmu0VyUcOY8jZcHdMDaMRXazjngGjAAmdop26mXGGPui5OyhAJX1pFeD902anWcjgMRJAsJ_AieWhUspzdw5C6JiWb75r_kCGrfBgUONRdaitP_oAn16MHIYA"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "https://spring-boot-mcservice-3-gatewy.herokuapp.com/gateway/transaction/1"
+			},
+			"response": []
+		}
+	]
+}
